@@ -298,16 +298,17 @@
 
 .corner-note{
   position: fixed;
+  top: auto;
+  left: 50%;
   right: auto;
-left: 50%;
-text-align: center;
-transform: translateX(-50%) translateY(8px);
+  bottom: calc(.3rem + env(safe-area-inset-bottom));
+  z-index: 20;
   max-width: 60vw;
   margin: 0;
   padding: .4rem .9rem;
   font-family: var(--font-body);
   font-size: .75rem;
-  text-align: right;
+  text-align: center;
   color: var(--ink-soft);
   background: rgba(255,255,255,.75);
   backdrop-filter: blur(4px);
@@ -315,7 +316,7 @@ transform: translateX(-50%) translateY(8px);
   border-radius: 50px;
   box-shadow: 0 4px 14px rgba(255,45,140,.15);
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateX(-50%) translateY(8px);
   pointer-events: none;
   transition: opacity .5s ease, transform .5s ease;
 }
