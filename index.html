@@ -298,8 +298,10 @@
 
 .corner-note{
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: auto;
+left: 50%;
+text-align: center;
+transform: translateX(-50%) translateY(8px);
   max-width: 60vw;
   margin: 0;
   padding: .4rem .9rem;
@@ -319,7 +321,7 @@
 }
 .corner-note.visible{
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
 
